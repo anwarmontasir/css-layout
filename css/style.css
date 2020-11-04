@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+header {
+  background: #294969;
+  color: ghostwhite;
+  padding: 10px 15px;
+  border: 12px solid #ffa949;
+  border-bottom-color: #cf7919;
+  margin: 0 -8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+article {
+  margin-top: 3rem;
+}
+section {
+  min-height: 100vh;
+  border-bottom: 2px dotted #666;
+  background: azure;
+  padding: 1rem;
+}
+#interesting-banner {
+  background: firebrick;
+  color: white;
+  font-weight: bold;
+  position: sticky; 
+  border: 12px solid lightsalmon;
+  top: 0;
+  padding: 10px 15px;
+  margin: 0 -8px;
+  z-index: 2;
+}
+figure, #bio {
+  max-width: 720px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.small-img {
+  width: 300px;
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+.clear {
+  clear: both;
+}
+#bio {
+  width: 100%;
+  padding: 2rem;
+  background: mistyrose;
+  border: 5px solid tomato;
+}
+footer {
+  color: #294969;
+  border: 2px solid #ffa949;
+  padding: 4px;
+  width: 180px;
+  font-size: .8rem;
+  text-align: center;
+  margin: 30px auto 15px;
+}
+ul li {
+  display: block;
+  width: 90%;
+  padding: 10px 0;
+  text-align: center;
+  background: yellow;
+}
+figure {
+  position: relative;
+  margin: 0;
+}
+figcaption {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+}
+
+@media print {
+  section {
+    min-height: auto;
+  }
+  #interesting-banner {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  ul li {
+    display: inline;
+  }
+}
+@media screen and (min-width: 900px) {
+  section {
+    background-color: cornsilk;
+  } 
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  header {
+    color: yellow;
+  } 
+}
+@media screen and (min-width: 900px), (orientation: portrait) {
+  section {
+    background-color: cornsilk;
+  } 
+}
